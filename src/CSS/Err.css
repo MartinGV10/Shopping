@@ -1,0 +1,23 @@
+.err {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px;
+    margin-top: 70px;
+}
+
+.err-links {
+    display: flex;
+    gap: 20px;
+    border: 1px solid rgb(243, 243, 243);
+    box-shadow: 0 0 2px black;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s all;
+}
