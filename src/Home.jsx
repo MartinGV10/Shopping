@@ -50,27 +50,6 @@ function Home() {
                         <p>The biggest trends, all in one place</p>
                     </div>
                     <div className="h-items">
-                        {/* {tablets.map((p) => (
-                            <div className="item" key={p.id}>
-                                <div className="item-top">
-                                    <img src={p.thumbnail} className="item-img"/>
-                                </div>
-
-                                <div className="item-mid">
-                                    <p className="item-title">{p.title}</p>
-                                    <p className="item-brand">{p.brand}</p>
-                                    <p className="price"><span className="discount">${(p.price)}</span> ${(p.price * (1 - (p.discountPercentage/100))).toFixed(2)}</p>
-                                </div>
-                                
-                                <div className="item-bot">
-                               
-                                </div>
-
-                                <div className="item-overlay">
-                                    <p className="link"><Link to='/shop'>Buy Now</Link></p>
-                                </div>
-                            </div>
-                        ))} */}
                         <UseImages category={'smartphones'} limit={5} skip={0}/>
                     </div>
                 </div>
@@ -81,27 +60,6 @@ function Home() {
                         <p>Get them now before they're gone</p>
                     </div>
                     <div className="h-items">
-                        {/* {watches.map((p) => (
-                            <div className="item" key={p.id}>
-                                <div className="item-top">
-                                    <img src={p.thumbnail} className="item-img"/>
-                                </div>
-
-                                <div className="item-mid">
-                                    <p className="item-title">{p.title}</p>
-                                    <p className="item-brand">{p.brand}</p>
-                                    <p className="price"><span className="discount">${(p.price)}</span> ${(p.price * (1 - (p.discountPercentage/100))).toFixed(2)}</p>
-                                </div>
-                                
-                                <div className="item-bot">
-
-                                </div>
-
-                                <div className="item-overlay">
-                                    <p className="link"><Link to='/shop'>Buy Now</Link></p>
-                                </div>
-                            </div>
-                        ))} */}
                         <UseImages category={'mens-watches'} limit={5} skip={0}/>
                     </div>
                 </div>

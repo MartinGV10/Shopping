@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router'
 import './CSS/App.css'
 import Footer from './Footer'
 import Home from './Home'
@@ -11,7 +12,7 @@ function App() {
         <Nav />
 
         <div className="main">
-          <Home />
+          <Outlet />
         </div>
         
         <Footer />
