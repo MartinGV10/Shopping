@@ -1,4 +1,5 @@
 import './CSS/Footer.css'
+import { Link } from 'react-router'
 
 function Footer() {
     return (
@@ -8,10 +9,11 @@ function Footer() {
                     <h2 className="f-title">About Us</h2>
                     <p className="f-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque laboriosam deleniti eum esse perferendis? Dignissimos</p>
                     <div className="f-imgs">
-                        <img src="" alt="linkedin" />
+                        <img src="" alt="github" />
                         <img src="" alt="github" />
                         <img src="" alt="idk" />
                     </div>
+                    
                 </div>
                 <div className="f-col">
                     <h2 className="f-title">Support</h2>
@@ -22,9 +24,9 @@ function Footer() {
                 </div>
                 <div className="f-col">
                     <h2 className="f-title">Shop</h2>
-                    <p className="f-links">Home</p>
-                    <p className="f-links">Shop</p>
-                    <p className="f-links">About</p>
+                    <Link to='/' className="f-links"><p >Home</p></Link>
+                    <Link to='/shop' className="f-links"><p >Shop</p></Link>
+                    <Link to='/about' className="f-links"><p >About</p></Link>
                 </div>
                 <div className="f-col">
                     <h2 className="f-title">Contact Us</h2>

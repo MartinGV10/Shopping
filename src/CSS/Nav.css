@@ -20,7 +20,7 @@
     padding: 5px;
 }
 
-.n-title:hover {
+.n-title:hover, a:hover {
     cursor: pointer;
     transform: translateY(-2px);
 }

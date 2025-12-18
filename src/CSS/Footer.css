@@ -22,3 +22,13 @@
     align-items: center;
     gap: 20px;
 }
+
+.f-links {
+    color: #85827e;
+    transition: 0.2s all;
+}
+
+.f-links:hover {
+    cursor: pointer;
+    transform: translateX(2px);
+}

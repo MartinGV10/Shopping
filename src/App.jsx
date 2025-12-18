@@ -1,5 +1,6 @@
-import './App.css'
+import './CSS/App.css'
 import Footer from './Footer'
+import Home from './Home'
 import Nav from './Nav'
 
 function App() {
@@ -9,7 +10,9 @@ function App() {
       <div className="whole-page">
         <Nav />
 
-        <div className="main"></div>
+        <div className="main">
+          <Home />
+        </div>
         
         <Footer />
       </div>
