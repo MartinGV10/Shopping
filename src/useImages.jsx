@@ -9,8 +9,9 @@ const UseImages = ({ category, limit, skip }) => {
     return (
         <>
         {products.map((p) => (
+            <div key={p.id}>
             <Link to='/shop'> 
-            <div className="item" key={p.id}>
+            <div className="item" >
                 <div className="item-top">
                     <img src={p.thumbnail} className="item-img"/>
                 </div>
@@ -32,10 +33,11 @@ const UseImages = ({ category, limit, skip }) => {
                 </div>
 
                 <div className="item-overlay">
-                    <p className="link"><Link to='/shop'>Buy Now</Link></p>
+                    <p className="link">Buy Now</p>
                 </div>
             </div>
             </Link>
+            </div>
         ))}
         </>
     )

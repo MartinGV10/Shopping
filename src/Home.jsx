@@ -27,19 +27,19 @@ function Home() {
                     <div className="prod-sec">
                         <img src={apple} alt="" className="prod-pic"/>
                         <div className="prod-overlay">
-                            <p className="link"><Link to='/shop'>Shop Tech</Link></p>
+                            <p className="link"><Link to='/shop' state={{ step: 'Phones'}}>Shop Tech</Link></p>
                         </div>
                     </div>
                     <div className="prod-sec">
                         <img src={clohtes} alt="" className="prod-pic"/>
                         <div className="prod-overlay">
-                            <p className="link"><Link to='/shop'>Shop Clothes</Link></p>
+                            <p className="link"><Link to='/shop' state={{ step: 'Clothes'}}>Shop Clothes</Link></p>
                         </div>
                     </div>
                     <div className="prod-sec">
                         <img src={watch} alt="" className="prod-pic"/>
                         <div className="prod-overlay">
-                            <p className="link"><Link to='/shop'>Shop Accessories</Link></p>
+                            <p className="link"><Link to='/shop' state={{ step: 'Watches'}}>Shop Accessories</Link></p>
                         </div>
                     </div>
                 </div>
