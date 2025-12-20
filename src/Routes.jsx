@@ -1,4 +1,5 @@
 import App from "./App"
+import Checkout from "./Checkout"
 import Error from "./Error"
 import Home from "./Home"
 import Item from "./Item"
@@ -12,9 +13,14 @@ const routes = [
         children: [
             { index: true, element: <Home /> },
             { path: 'shop', element: <Shop /> },
-            { path: 'shop/:category/:id', element: <Item />}
+            { path: 'checkout', element: <Checkout /> },
+            { path: 'shop/:category/:id', element: <Item />},
         ]
     },
+    // {
+    //     path: '/checkout',
+    //     element: <Checkout />
+    // }
     // {
     //     path: '/shop',
     //     element: <Shop />
