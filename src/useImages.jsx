@@ -1,16 +1,19 @@
 import { Link } from "react-router"
 import useCategory from "./useCategory"
 
-const UseImages = ({ category, limit, skip }) => {
+const UseImages = ({ category, limit, skip, excludeId }) => {
     const { products, load, error } = useCategory(category, limit, skip)
 
     if (load) return <p>Loading...</p>
     if (error) return <p>A network error was encountered</p>
+
+    const filtered = excludeId ? products.filter(p => p.id != excludeId) : products
+
     return (
         <>
-        {products.map((p) => (
+        {filtered.map((p) => (
             <div key={p.id}>
-            <Link to='/shop'> 
+            <Link to={`/shop/${p.category}/${p.title}`} state={{ item: p }}> 
             <div className="item" >
                 <div className="item-top">
                     <img src={p.thumbnail} className="item-img"/>

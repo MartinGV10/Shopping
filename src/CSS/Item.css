@@ -1,0 +1,216 @@
+.i-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    /* background-color: red; */
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.i-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* align-items: flex-start; */
+    /* background-color: green; */
+    padding: 20px;
+    width: 40%;
+    gap: 20px;
+}
+
+.sel-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: yellow; */
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputs {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.add .link {
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.add .link:hover {
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+.sel-img {
+    background-color: rgba(242, 240, 236);
+}
+
+.sel-desc p {
+    /* font-size: 1.2rem; */
+}
+
+.description {
+    font-weight: 400;
+}
+
+.ratings {
+    /* font-size: 12px; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sel-tit {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.sel-group {
+    color: #2c2a27;
+    opacity: 0.75;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputs button {
+    border: none;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.inputs button:hover {
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+.inputs input {
+    width: 70px;
+    text-align: center;
+    border: none;
+    background-color: rgba(242, 240, 236);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    /* font-size: 1.2rem; */
+    font-size: 15px;
+
+}
+
+.i-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.prod-info {
+    background-color: rgba(242, 240, 236);
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.item-desc {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.status {
+    color: rgba(0, 0, 0, 0.781);
+    opacity: 0.75;
+}
+
+.prod-left, .prod-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.rest {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* background-color: red; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.prod-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background-color: red; */
+    gap: 10px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.review {
+    background-color: rgba(242, 240, 236);
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.rev-top {
+    display: flex;
+    /* gap: 10px; */
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.rev-mid {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.rev-em {
+    font-size: 0.9rem;
+}
+
+.rev-bot {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.user-rat {
+    display: flex;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.other-stuff {
+    display: flex;
+    gap: 20px;
+}
