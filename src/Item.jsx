@@ -1,8 +1,10 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useLocation, useParams } from "react-router"
 import useCategory from "./useCategory"
 import UseImages from "./useImages"
 import './CSS/Item.css'
+import { useNavigate } from "react-router"
+import { useCart } from "./CartContext"
 
 function Item() {
     const { state } = useLocation()
@@ -21,6 +23,28 @@ function Item() {
             year: "numeric",
         });
     };
+
+    const [cartList, setCartList] = useState({})
+
+    // const addToCart = (thing, num) => {
+    //     setCartList(prev => ({
+    //         ...prev,
+    //         [thing]: num
+    //     }))
+
+    // }
+
+    // const navigate = useNavigate()
+    const { addToCart } = useCart()
+
+    const handleAdd = () => {
+        addToCart(selected, count)
+        // navigate('/checkout')
+    }
+    
+    // useEffect(() => {
+    //     console.log(cartList)
+    // }, [cartList])
 
     return (
         <>
@@ -71,7 +95,7 @@ function Item() {
                             }}>-</button>
 
                         </div>
-                        <button className="link" onClick={console.log(count)}>Add to Cart</button>
+                        <button className="link" onClick={() => {console.log(count); handleAdd()}}>Add to Cart</button>
 
 
                     </div>
