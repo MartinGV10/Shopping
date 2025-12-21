@@ -11,7 +11,7 @@ function Nav() {
         <>
         <div className="nav">
             <div className="n-left">
-                <Link to='/'><h2 className="n-name">Threads FC</h2></Link>
+                <Link to='/'><h2 className="n-name">Essentials</h2></Link>
             </div>
             <div className="n-mid">
                 <Link to='/'><p className="n-title">Home</p></Link>
