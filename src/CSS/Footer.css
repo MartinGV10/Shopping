@@ -20,6 +20,7 @@
 .f-imgs {
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -28,7 +29,16 @@
     transition: 0.2s all;
 }
 
-.f-links:hover {
+.f-pic {
+    width: 30px;
+    transition: 0.2s all;
+}
+
+.f-links:hover, .f-pic:hover {
     cursor: pointer;
     transform: translateX(2px);
+}
+
+.f-desc {
+    max-width: 100%;
 }
