@@ -25,6 +25,9 @@
 
 .cart-right {
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .cart-left {
@@ -67,4 +70,45 @@
 .check-tit {
     font-weight: 500;
     font-size: 1.1rem;
+}
+
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.empty-cart h1 {
+    font-weight: 500;
+}
+
+.empty-cart .link {
+    background-color: black;
+}
+
+.empty-cart .link:hover {
+    background-color: #4d4944;
+}
+
+.total-price {
+    background-color: rgba(242, 240, 236);
+    padding: 20px;
+    text-align: right;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+.tot-sub {
+    font-weight: 400;
+    opacity: 0.75;
+    color: #2c2a27;
+}
+
+.total {
+    font-weight: 500;
 }

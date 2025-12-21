@@ -24,3 +24,24 @@
     cursor: pointer;
     transform: translateY(-2px);
 }
+
+.n-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.n-right svg {
+    width: 25px;
+}
+
+.item-quant {
+    background-color: black;
+    color: white;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
